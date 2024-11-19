@@ -59,11 +59,3 @@ This is a Telegram bot project that listens to group messages and performs actio
 - `replies.json`：存储关键词对应的回复。
 - `sent_links.json`：存储已经发送过的链接。
 
----
-
-### 如何实现跳转
-- 在 Markdown 文件中使用 `[链接文字](#标题锚点)` 的方式。
-- 锚点自动根据标题的内容生成（大小写不敏感，空格替换为`-`）。
-
-现在用户可以在中英文版本间方便地跳转！
-
