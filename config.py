@@ -15,7 +15,7 @@ RSS_SOURCES = [
     {
         "url": "https://www.v2ex.com/index.xml",
         "name": "v2ex",
-        "fields": ["title", "link", "published", "id"],
+        "fields": ["title", "link", "id", "published"],
         "date_format": "%Y-%m-%dT%H:%M:%S%z",
         "unique_key": "id"  
     },

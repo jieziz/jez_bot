@@ -16,7 +16,8 @@ def extract_fields(entry, fields, date_format):
             data[field] = "无"  # 如果字段不存在，返回默认值
 
     # 处理日期字段，假设所有日期字段都需要转换
-    date_field = fields[-1]  # 假设最后一个字段是日期字段
+    # 设定最后一个字段是日期字段
+    date_field = fields[-1] 
     if date_field in data:
         pub_date = data[date_field]
         try:

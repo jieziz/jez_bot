@@ -3,6 +3,9 @@ from telegram.ext import MessageHandler, filters, ContextTypes
 from utils import config_utils
 
 async def monitor_group_messages(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    if update.message is None:
+        return
+
     message_text = update.message.text
     replies = config_utils.load_replies()
     for keyword, reply in replies.items():
