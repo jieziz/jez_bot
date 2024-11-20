@@ -3,8 +3,11 @@ from telegram.ext import CommandHandler, ContextTypes
 from utils import config_utils
 
 async def add_keyword(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    if update.message is None:
+        return
+
     if context.args:
-        keyword = context.args[0]
+        keyword = " ".join(context.args)
         keywords = config_utils.load_keywords()
         keywords.add(keyword)
         config_utils.save_keywords(keywords)
@@ -14,7 +17,7 @@ async def add_keyword(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
 
 async def remove_keyword(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     if context.args:
-        keyword = context.args[0]
+        keyword = " ".join(context.args)
         keywords = config_utils.load_keywords()
         if keyword in keywords:
             keywords.remove(keyword)
