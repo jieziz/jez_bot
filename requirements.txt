@@ -1,2 +1,17 @@
-python-telegram-bot
-feedparser
+APScheduler==3.10.4
+beautifulsoup4==4.12.3
+DrissionPage==4.1.0.12
+feedparser==6.0.11
+load-dotenv==0.1.0
+pipdeptree==2.24.0
+PySocks==1.7.1
+python-telegram-bot==21.7
+setuptools==75.6.0
+TimePinner==0.1.1
+
+# python-telegram-bot dependencies
+httpx==0.27.2
+anyio==4.6.2.post1
+sniffio==1.3.1
+httpcore==1.0.6
+h11==0.14.0
