@@ -36,6 +36,6 @@ async def list_keywords(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
     else:
         await update.message.reply_text("当前没有关键词。")
 
-add_keyword_handler = CommandHandler("add_keyword", add_keyword)
-remove_keyword_handler = CommandHandler("remove_keyword", remove_keyword)
-list_keywords_handler = CommandHandler("list_keywords", list_keywords)
+add_keyword_handler = CommandHandler("add_kw", add_keyword)
+remove_keyword_handler = CommandHandler("del_kw", remove_keyword)
+list_keywords_handler = CommandHandler("list_kw", list_keywords)
