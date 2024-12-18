@@ -3603,3 +3603,786 @@ TypeError: fetch_rss_and_filter() takes 0 positional arguments but 1 was given
 2024-12-18 15:41:32,276 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
 2024-12-18 15:41:32,277 - apscheduler.scheduler - INFO - Scheduler has been shut down
 2024-12-18 15:41:32,277 - telegram.ext.Application - INFO - Application.stop() complete
+2024-12-18 15:41:40,546 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-18 15:41:41,318 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getMe "HTTP/1.1 200 OK"
+2024-12-18 15:41:41,535 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/deleteWebhook "HTTP/1.1 200 OK"
+2024-12-18 15:41:41,536 - apscheduler.scheduler - INFO - Added job "fetch_rss_and_filter" to job store "default"
+2024-12-18 15:41:41,536 - apscheduler.scheduler - INFO - Scheduler started
+2024-12-18 15:41:41,537 - telegram.ext.Application - INFO - Application started
+2024-12-18 15:41:52,187 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:42:02,407 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:42:12,626 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:42:22,854 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:42:33,069 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:42:40,550 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 07:43:40 UTC)" (scheduled at 2024-12-18 07:42:40.545665+00:00)
+2024-12-18 15:42:40,551 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 15:42:40,551 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 15:42:41,423 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:42:41,426 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:42:42,302 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 15:42:42,303 - frontend_handlers.rss_handlers - INFO - 成功发送消息: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:42:42,304 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:42:42,716 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 15:42:42,717 - frontend_handlers.rss_handlers - INFO - 成功发送消息: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:42:42,718 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 圣诞各厂商有哪些闪购活动吗？
+2024-12-18 15:42:43,148 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 15:42:43,149 - frontend_handlers.rss_handlers - INFO - 成功发送消息: 圣诞各厂商有哪些闪购活动吗？
+2024-12-18 15:42:43,150 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 15:42:44,421 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 15:42:44,424 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 15:42:45,360 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 15:42:45,360 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 15:42:45,640 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 15:42:45,640 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 15:42:46,197 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 15:42:46,198 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 15:42:47,501 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:42:47,502 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 15:42:48,345 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 15:42:48,347 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 07:43:40 UTC)" executed successfully
+2024-12-18 15:42:48,347 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:42:58,586 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:43:08,801 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:43:19,018 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:43:29,253 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:43:39,468 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:43:40,547 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 07:44:40 UTC)" (scheduled at 2024-12-18 07:43:40.545665+00:00)
+2024-12-18 15:43:40,548 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 15:43:40,549 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 15:43:41,041 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:43:41,041 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:43:41,042 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:43:41,042 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:43:41,042 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:43:41,043 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 圣诞各厂商有哪些闪购活动吗？
+2024-12-18 15:43:41,043 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 圣诞各厂商有哪些闪购活动吗？
+2024-12-18 15:43:41,044 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 15:43:41,397 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 15:43:41,400 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 15:43:42,320 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 15:43:42,320 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 15:43:42,603 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 15:43:42,603 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 15:43:43,158 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 15:43:43,160 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 15:43:44,145 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:43:44,146 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 15:43:45,324 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 15:43:45,327 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 07:44:40 UTC)" executed successfully
+2024-12-18 15:43:49,685 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:43:59,901 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:44:10,119 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:44:20,334 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:44:30,557 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:44:40,546 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 07:45:40 UTC)" (scheduled at 2024-12-18 07:44:40.545665+00:00)
+2024-12-18 15:44:40,547 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 15:44:40,548 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 15:44:41,038 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:44:41,039 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:44:41,039 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:44:41,039 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:44:41,039 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:44:41,040 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 圣诞各厂商有哪些闪购活动吗？
+2024-12-18 15:44:41,040 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 圣诞各厂商有哪些闪购活动吗？
+2024-12-18 15:44:41,040 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 15:44:41,401 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 15:44:41,403 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 15:44:42,335 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 15:44:42,335 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 15:44:42,620 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 15:44:42,621 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 15:44:43,513 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 15:44:43,514 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 15:44:44,503 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:44:44,504 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 15:44:45,889 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 15:44:45,892 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 07:45:40 UTC)" executed successfully
+2024-12-18 15:44:45,893 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:44:47,116 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:44:57,334 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:45:07,553 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:45:17,770 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:45:28,330 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:45:28,330 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-12-18 15:45:28,331 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-12-18 15:45:28,331 - telegram.ext.Application - INFO - Application.stop() complete
+2024-12-18 15:52:25,662 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-12-18 15:52:26,425 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getMe "HTTP/1.1 200 OK"
+2024-12-18 15:52:26,636 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/deleteWebhook "HTTP/1.1 200 OK"
+2024-12-18 15:52:26,637 - apscheduler.scheduler - INFO - Added job "fetch_rss_and_filter" to job store "default"
+2024-12-18 15:52:26,637 - apscheduler.scheduler - INFO - Scheduler started
+2024-12-18 15:52:26,637 - telegram.ext.Application - INFO - Application started
+2024-12-18 15:52:37,337 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:52:47,566 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:52:57,794 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:53:08,028 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:53:13,771 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:53:14,637 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 15:53:14,639 - apscheduler.scheduler - INFO - Added job "auto_delete_message" to job store "default"
+2024-12-18 15:53:22,205 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:53:23,186 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 15:53:23,187 - apscheduler.scheduler - INFO - Added job "auto_delete_message" to job store "default"
+2024-12-18 15:53:24,638 - apscheduler.scheduler - INFO - Removed job 53617f11e5984aba961193422b4e594d
+2024-12-18 15:53:24,640 - apscheduler.executors.default - INFO - Running job "auto_delete_message (trigger: date[2024-12-18 07:53:24 UTC], next run at: 2024-12-18 07:53:24 UTC)" (scheduled at 2024-12-18 07:53:24.638134+00:00)
+2024-12-18 15:53:25,032 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/deleteMessage "HTTP/1.1 200 OK"
+2024-12-18 15:53:25,033 - apscheduler.executors.default - INFO - Job "auto_delete_message (trigger: date[2024-12-18 07:53:24 UTC], next run at: 2024-12-18 07:53:24 UTC)" executed successfully
+2024-12-18 15:53:25,664 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 07:54:25 UTC)" (scheduled at 2024-12-18 07:53:25.661487+00:00)
+2024-12-18 15:53:25,665 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 15:53:25,666 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 15:53:26,584 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:53:26,587 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:53:26,587 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:53:26,588 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:53:26,588 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:53:26,588 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 15:53:27,393 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 15:53:27,396 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 15:53:28,349 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 15:53:28,349 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 15:53:28,679 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 15:53:28,680 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 15:53:29,523 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 15:53:29,525 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 15:53:30,429 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:53:30,430 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 15:53:31,903 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 15:53:31,906 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 07:54:25 UTC)" executed successfully
+2024-12-18 15:53:32,435 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:53:33,188 - apscheduler.scheduler - INFO - Removed job df079ba5cc5b44b1a4016283e8892ec6
+2024-12-18 15:53:33,188 - apscheduler.executors.default - INFO - Running job "auto_delete_message (trigger: date[2024-12-18 07:53:33 UTC], next run at: 2024-12-18 07:53:33 UTC)" (scheduled at 2024-12-18 07:53:33.187388+00:00)
+2024-12-18 15:53:34,032 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/deleteMessage "HTTP/1.1 200 OK"
+2024-12-18 15:53:34,033 - apscheduler.executors.default - INFO - Job "auto_delete_message (trigger: date[2024-12-18 07:53:33 UTC], next run at: 2024-12-18 07:53:33 UTC)" executed successfully
+2024-12-18 15:53:42,663 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:53:52,897 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:54:03,249 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:54:13,480 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:54:23,709 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:54:25,669 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 07:55:25 UTC)" (scheduled at 2024-12-18 07:54:25.661487+00:00)
+2024-12-18 15:54:25,670 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 15:54:25,670 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 15:54:26,197 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:54:26,197 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:54:26,198 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:54:26,198 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:54:26,198 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:54:26,199 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 15:54:26,533 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 15:54:26,535 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 15:54:27,524 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 15:54:27,525 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 15:54:27,802 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 15:54:27,803 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 15:54:28,369 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 15:54:28,371 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 15:54:29,294 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:54:29,295 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 15:54:30,590 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 15:54:30,593 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 07:55:25 UTC)" executed successfully
+2024-12-18 15:54:33,956 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:54:44,198 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:54:54,448 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:55:04,683 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:55:14,916 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:55:25,154 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:55:25,664 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 07:56:25 UTC)" (scheduled at 2024-12-18 07:55:25.661487+00:00)
+2024-12-18 15:55:25,665 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 15:55:25,665 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 15:55:26,569 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:55:26,570 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:55:26,570 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:55:26,570 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:55:26,570 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:55:26,571 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 15:55:27,831 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 15:55:27,833 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 15:55:28,748 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 15:55:28,749 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 15:55:29,052 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 15:55:29,053 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 15:55:29,612 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 15:55:29,614 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 15:55:30,508 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:55:30,509 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 15:55:31,774 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 15:55:31,776 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 07:56:25 UTC)" executed successfully
+2024-12-18 15:55:35,384 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:55:35,619 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:55:36,488 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 15:55:45,851 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:55:49,666 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:55:50,571 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 15:55:50,571 - apscheduler.scheduler - INFO - Added job "auto_delete_message" to job store "default"
+2024-12-18 15:55:59,899 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:56:00,573 - apscheduler.scheduler - INFO - Removed job 879590af84a14a2095acd8002a9f6403
+2024-12-18 15:56:00,573 - apscheduler.executors.default - INFO - Running job "auto_delete_message (trigger: date[2024-12-18 07:56:00 UTC], next run at: 2024-12-18 07:56:00 UTC)" (scheduled at 2024-12-18 07:56:00.571854+00:00)
+2024-12-18 15:56:01,392 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/deleteMessage "HTTP/1.1 200 OK"
+2024-12-18 15:56:01,393 - apscheduler.executors.default - INFO - Job "auto_delete_message (trigger: date[2024-12-18 07:56:00 UTC], next run at: 2024-12-18 07:56:00 UTC)" executed successfully
+2024-12-18 15:56:04,243 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:56:04,764 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 15:56:04,765 - apscheduler.scheduler - INFO - Added job "auto_delete_message" to job store "default"
+2024-12-18 15:56:14,478 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:56:14,778 - apscheduler.scheduler - INFO - Removed job 8916799ca1a94b19b632811e95db52ba
+2024-12-18 15:56:14,778 - apscheduler.executors.default - INFO - Running job "auto_delete_message (trigger: date[2024-12-18 07:56:14 UTC], next run at: 2024-12-18 07:56:14 UTC)" (scheduled at 2024-12-18 07:56:14.765279+00:00)
+2024-12-18 15:56:15,670 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/deleteMessage "HTTP/1.1 200 OK"
+2024-12-18 15:56:15,671 - apscheduler.executors.default - INFO - Job "auto_delete_message (trigger: date[2024-12-18 07:56:14 UTC], next run at: 2024-12-18 07:56:14 UTC)" executed successfully
+2024-12-18 15:56:23,963 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:56:24,867 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 15:56:24,868 - apscheduler.scheduler - INFO - Added job "auto_delete_message" to job store "default"
+2024-12-18 15:56:25,663 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 07:57:25 UTC)" (scheduled at 2024-12-18 07:56:25.661487+00:00)
+2024-12-18 15:56:25,668 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 15:56:25,669 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 15:56:26,481 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:56:26,482 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:56:26,483 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:56:26,484 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:56:26,484 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:56:26,485 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 15:56:26,876 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 15:56:26,877 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 15:56:27,759 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 15:56:27,760 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 15:56:28,106 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 15:56:28,107 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 15:56:29,021 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 15:56:29,023 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 15:56:29,969 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:56:29,970 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 15:56:31,409 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 15:56:31,412 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 07:57:25 UTC)" executed successfully
+2024-12-18 15:56:34,202 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:56:34,867 - apscheduler.scheduler - INFO - Removed job 2608fa84438c41d0be881367674380ab
+2024-12-18 15:56:34,867 - apscheduler.executors.default - INFO - Running job "auto_delete_message (trigger: date[2024-12-18 07:56:34 UTC], next run at: 2024-12-18 07:56:34 UTC)" (scheduled at 2024-12-18 07:56:34.867183+00:00)
+2024-12-18 15:56:35,721 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/deleteMessage "HTTP/1.1 200 OK"
+2024-12-18 15:56:35,722 - apscheduler.executors.default - INFO - Job "auto_delete_message (trigger: date[2024-12-18 07:56:34 UTC], next run at: 2024-12-18 07:56:34 UTC)" executed successfully
+2024-12-18 15:56:36,366 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:56:36,775 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 15:56:36,775 - apscheduler.scheduler - INFO - Added job "auto_delete_message" to job store "default"
+2024-12-18 15:56:46,598 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:56:46,776 - apscheduler.scheduler - INFO - Removed job 8ea2f74b29fa44458e02871c05c254d8
+2024-12-18 15:56:46,776 - apscheduler.executors.default - INFO - Running job "auto_delete_message (trigger: date[2024-12-18 07:56:46 UTC], next run at: 2024-12-18 07:56:46 UTC)" (scheduled at 2024-12-18 07:56:46.775741+00:00)
+2024-12-18 15:56:47,622 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/deleteMessage "HTTP/1.1 200 OK"
+2024-12-18 15:56:47,623 - apscheduler.executors.default - INFO - Job "auto_delete_message (trigger: date[2024-12-18 07:56:46 UTC], next run at: 2024-12-18 07:56:46 UTC)" executed successfully
+2024-12-18 15:56:49,867 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:56:50,438 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 15:56:50,439 - apscheduler.scheduler - INFO - Added job "auto_delete_message" to job store "default"
+2024-12-18 15:57:00,099 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:57:00,445 - apscheduler.scheduler - INFO - Removed job b159ebbe541446bf88ff6532efa816ec
+2024-12-18 15:57:00,445 - apscheduler.executors.default - INFO - Running job "auto_delete_message (trigger: date[2024-12-18 07:57:00 UTC], next run at: 2024-12-18 07:57:00 UTC)" (scheduled at 2024-12-18 07:57:00.439082+00:00)
+2024-12-18 15:57:01,399 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/deleteMessage "HTTP/1.1 200 OK"
+2024-12-18 15:57:01,400 - apscheduler.executors.default - INFO - Job "auto_delete_message (trigger: date[2024-12-18 07:57:00 UTC], next run at: 2024-12-18 07:57:00 UTC)" executed successfully
+2024-12-18 15:57:10,327 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:57:19,145 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:57:20,017 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 15:57:20,018 - apscheduler.scheduler - INFO - Added job "auto_delete_message" to job store "default"
+2024-12-18 15:57:25,662 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 07:58:25 UTC)" (scheduled at 2024-12-18 07:57:25.661487+00:00)
+2024-12-18 15:57:25,663 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 15:57:25,663 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 15:57:26,110 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:57:26,110 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 出 Claw HK 4刀
+2024-12-18 15:57:27,001 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 15:57:27,002 - frontend_handlers.rss_handlers - INFO - 成功发送消息: 出 Claw HK 4刀
+2024-12-18 15:57:27,003 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:57:27,004 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:57:27,004 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:57:27,004 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:57:27,004 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 15:57:27,359 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 15:57:27,360 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 15:57:28,311 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 15:57:28,312 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 15:57:28,638 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 15:57:28,639 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 15:57:29,656 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 15:57:29,658 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 15:57:30,608 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:57:30,609 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 15:57:31,953 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 15:57:31,956 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 07:58:25 UTC)" executed successfully
+2024-12-18 15:57:31,956 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:57:31,958 - apscheduler.scheduler - INFO - Removed job 4321ec0b0c834191a5896211acb88b23
+2024-12-18 15:57:31,960 - apscheduler.executors.default - WARNING - Run time of job "auto_delete_message (trigger: date[2024-12-18 07:57:30 UTC], next run at: 2024-12-18 07:57:30 UTC)" was missed by 0:00:01.942171
+2024-12-18 15:57:42,193 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:57:52,424 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:58:02,653 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:58:12,896 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:58:23,137 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:58:25,661 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 07:59:25 UTC)" (scheduled at 2024-12-18 07:58:25.661487+00:00)
+2024-12-18 15:58:25,662 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 15:58:25,663 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 15:58:26,117 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:58:26,118 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 出 Claw HK 4刀
+2024-12-18 15:58:26,118 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 出 Claw HK 4刀
+2024-12-18 15:58:26,119 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:58:26,119 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:58:26,119 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:58:26,119 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:58:26,120 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 15:58:27,441 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 15:58:27,443 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 15:58:28,419 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 15:58:28,419 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 15:58:28,726 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 15:58:28,727 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 15:58:29,329 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 15:58:29,330 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 15:58:30,268 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:58:30,269 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 15:58:31,716 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 15:58:31,719 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 07:59:25 UTC)" executed successfully
+2024-12-18 15:58:33,371 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:58:43,600 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:58:53,833 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:59:04,081 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:59:14,315 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:59:24,559 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:59:25,663 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:00:25 UTC)" (scheduled at 2024-12-18 07:59:25.661487+00:00)
+2024-12-18 15:59:25,664 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 15:59:25,664 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 15:59:26,527 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:59:26,528 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 出 Claw HK 4刀
+2024-12-18 15:59:26,528 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 出 Claw HK 4刀
+2024-12-18 15:59:26,529 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:59:26,529 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 15:59:26,529 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:59:26,530 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 15:59:26,530 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 15:59:26,875 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 15:59:26,876 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 15:59:27,823 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 15:59:27,824 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 15:59:28,102 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 15:59:28,103 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 15:59:28,951 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 15:59:28,952 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 15:59:29,916 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 15:59:29,917 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 15:59:31,296 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 15:59:31,300 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:00:25 UTC)" executed successfully
+2024-12-18 15:59:34,793 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:59:45,025 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 15:59:55,254 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:00:05,492 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:00:15,867 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:00:25,666 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:01:25 UTC)" (scheduled at 2024-12-18 08:00:25.661487+00:00)
+2024-12-18 16:00:25,667 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 16:00:25,668 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 16:00:26,138 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:00:26,138 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 出 Claw HK 4刀
+2024-12-18 16:00:26,139 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 出 Claw HK 4刀
+2024-12-18 16:00:26,139 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 16:00:26,139 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 16:00:26,140 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 16:00:26,140 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 16:00:26,140 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 16:00:26,491 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 16:00:26,493 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 16:00:27,445 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 16:00:27,445 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 16:00:27,740 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 16:00:27,741 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 16:00:28,353 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 16:00:28,354 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 16:00:29,308 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:00:29,308 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 16:00:30,487 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 16:00:30,490 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:01:25 UTC)" executed successfully
+2024-12-18 16:00:30,490 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:00:40,720 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:00:50,966 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:01:01,203 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:01:11,439 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:01:21,672 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:01:25,662 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:02:25 UTC)" (scheduled at 2024-12-18 08:01:25.661487+00:00)
+2024-12-18 16:01:25,662 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 16:01:25,663 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 16:01:26,124 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:01:26,124 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 出 Claw HK 4刀
+2024-12-18 16:01:26,124 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 出 Claw HK 4刀
+2024-12-18 16:01:26,125 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 16:01:26,125 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 16:01:26,125 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 16:01:26,125 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 16:01:26,126 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 16:01:27,382 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 16:01:27,384 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 16:01:28,323 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 16:01:28,323 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 16:01:28,592 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 16:01:28,592 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 16:01:29,463 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 16:01:29,465 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 16:01:30,433 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:01:30,434 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 16:01:32,206 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 16:01:32,209 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:02:25 UTC)" executed successfully
+2024-12-18 16:01:32,209 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:01:42,439 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:01:52,675 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:02:02,928 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:02:13,277 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:02:23,541 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:02:25,668 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:03:25 UTC)" (scheduled at 2024-12-18 08:02:25.661487+00:00)
+2024-12-18 16:02:25,669 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 16:02:25,670 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 16:02:26,549 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:02:26,550 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 出 Claw HK 4刀
+2024-12-18 16:02:26,550 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 出 Claw HK 4刀
+2024-12-18 16:02:26,551 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 16:02:26,551 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 16:02:26,551 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 16:02:26,551 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 16:02:26,552 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 16:02:26,870 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 16:02:26,872 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 16:02:27,801 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 16:02:27,801 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 16:02:28,079 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 16:02:28,079 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 16:02:28,677 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 16:02:28,678 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 16:02:29,617 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:02:29,619 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 16:02:30,771 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 16:02:30,774 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:03:25 UTC)" executed successfully
+2024-12-18 16:02:33,785 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:02:44,032 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:02:54,335 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:03:04,829 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:03:15,069 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:03:25,317 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:03:25,672 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:04:25 UTC)" (scheduled at 2024-12-18 08:03:25.661487+00:00)
+2024-12-18 16:03:25,673 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 16:03:25,673 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 16:03:26,548 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:03:26,549 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 出 Claw HK 4刀
+2024-12-18 16:03:26,549 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 出 Claw HK 4刀
+2024-12-18 16:03:26,550 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 16:03:26,550 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 16:03:26,551 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 16:03:26,551 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 收个nc rs2000纽伦堡翻倍圣诞刚出的那个
+2024-12-18 16:03:26,551 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 16:03:26,884 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 16:03:26,886 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 16:03:27,785 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 16:03:27,786 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 16:03:28,329 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 16:03:28,330 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 16:03:30,392 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 16:03:30,393 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 16:03:31,299 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:03:31,300 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 16:03:32,435 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 16:03:32,437 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:04:25 UTC)" executed successfully
+2024-12-18 16:03:35,547 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:03:45,788 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:03:56,018 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:04:06,264 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:04:16,520 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:04:25,669 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:05:25 UTC)" (scheduled at 2024-12-18 08:04:25.661487+00:00)
+2024-12-18 16:04:25,670 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 16:04:25,671 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 16:04:26,518 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:04:26,519 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 出 Claw HK 4刀
+2024-12-18 16:04:26,519 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 出 Claw HK 4刀
+2024-12-18 16:04:26,520 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 16:04:26,520 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 【拼车】ClawCloud 4刀，缺一人拼单
+2024-12-18 16:04:26,520 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 16:04:28,108 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 16:04:28,109 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 16:04:29,038 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 16:04:29,039 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 16:04:29,357 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 16:04:29,357 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 16:04:29,892 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 16:04:29,894 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 16:04:30,824 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:04:30,825 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 16:04:32,135 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 16:04:32,138 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:05:25 UTC)" executed successfully
+2024-12-18 16:04:32,139 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:04:42,370 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:04:52,606 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:05:02,861 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:05:13,104 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:05:23,368 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:05:25,676 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:06:25 UTC)" (scheduled at 2024-12-18 08:05:25.661487+00:00)
+2024-12-18 16:05:25,677 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 16:05:25,677 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 16:05:26,560 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:05:26,561 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 出 Claw HK 4刀
+2024-12-18 16:05:26,562 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 出 Claw HK 4刀
+2024-12-18 16:05:26,562 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 16:05:27,945 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 16:05:27,947 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 16:05:28,858 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 16:05:28,858 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 16:05:29,162 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 16:05:29,163 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 16:05:29,767 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 16:05:29,768 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 16:05:30,713 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:05:30,714 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 16:05:31,911 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 16:05:31,913 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:06:25 UTC)" executed successfully
+2024-12-18 16:05:33,612 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:05:43,841 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:05:54,087 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:06:04,328 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:06:14,627 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:06:24,861 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:06:25,662 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:07:25 UTC)" (scheduled at 2024-12-18 08:06:25.661487+00:00)
+2024-12-18 16:06:25,663 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 16:06:25,663 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 16:06:26,534 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:06:26,535 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 出 Claw HK 4刀
+2024-12-18 16:06:26,535 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 出 Claw HK 4刀
+2024-12-18 16:06:26,535 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 16:06:26,908 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 16:06:26,910 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 16:06:27,856 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 16:06:27,857 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 16:06:28,144 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 16:06:28,145 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 16:06:29,062 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 16:06:29,064 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 16:06:29,981 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:06:29,982 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 16:06:31,279 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 16:06:31,281 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:07:25 UTC)" executed successfully
+2024-12-18 16:06:35,093 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:06:45,376 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:06:55,611 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:07:05,855 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:07:16,098 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:07:25,661 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:08:25 UTC)" (scheduled at 2024-12-18 08:07:25.661487+00:00)
+2024-12-18 16:07:25,662 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 16:07:25,666 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 16:07:26,118 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:07:26,119 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 出 Claw HK 4刀
+2024-12-18 16:07:26,120 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 出 Claw HK 4刀
+2024-12-18 16:07:26,120 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 16:07:26,454 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 16:07:26,456 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 16:07:27,380 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 16:07:27,381 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 16:07:27,699 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 16:07:27,700 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 16:07:28,275 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 16:07:28,277 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 16:07:29,192 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:07:29,193 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 16:07:30,052 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 16:07:30,055 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:08:25 UTC)" executed successfully
+2024-12-18 16:07:30,056 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:07:40,287 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:07:50,518 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:08:00,776 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:08:11,110 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:08:21,347 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:08:25,661 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:09:25 UTC)" (scheduled at 2024-12-18 08:08:25.661487+00:00)
+2024-12-18 16:08:25,662 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 16:08:25,662 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 16:08:26,504 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:08:26,505 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 出 Claw HK 4刀
+2024-12-18 16:08:26,505 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 出 Claw HK 4刀
+2024-12-18 16:08:26,506 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 16:08:26,878 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 16:08:26,880 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 16:08:27,826 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 16:08:27,826 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 16:08:28,103 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 16:08:28,104 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 16:08:28,678 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 16:08:28,679 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 16:08:29,596 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:08:29,597 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 16:08:30,700 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 16:08:30,703 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:09:25 UTC)" executed successfully
+2024-12-18 16:08:31,621 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:08:41,859 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:08:52,099 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:09:02,369 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:09:13,014 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:09:23,227 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:09:25,666 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:10:25 UTC)" (scheduled at 2024-12-18 08:09:25.661487+00:00)
+2024-12-18 16:09:25,668 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 16:09:25,668 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 16:09:26,167 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:09:26,168 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 出 Claw HK 4刀
+2024-12-18 16:09:26,168 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 出 Claw HK 4刀
+2024-12-18 16:09:26,169 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 16:09:26,531 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 16:09:26,533 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 16:09:27,463 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 16:09:27,463 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 16:09:27,805 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 16:09:27,812 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 16:09:28,808 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 16:09:28,815 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 16:09:29,813 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:09:29,815 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 16:09:31,214 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 16:09:31,220 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:10:25 UTC)" executed successfully
+2024-12-18 16:09:33,462 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:09:43,689 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:09:53,912 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:10:04,127 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:10:14,391 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:10:24,744 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:10:25,663 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:11:25 UTC)" (scheduled at 2024-12-18 08:10:25.661487+00:00)
+2024-12-18 16:10:25,667 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 16:10:25,673 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 16:10:26,549 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:10:26,554 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 90包push出claw hk 4🔪
+2024-12-18 16:10:27,446 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 16:10:27,447 - frontend_handlers.rss_handlers - INFO - 成功发送消息: 90包push出claw hk 4🔪
+2024-12-18 16:10:27,449 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 出 Claw HK 4刀
+2024-12-18 16:10:27,450 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 出 Claw HK 4刀
+2024-12-18 16:10:27,450 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 16:10:29,220 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 16:10:29,230 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 16:10:30,413 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 16:10:30,432 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 16:10:30,991 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 16:10:30,993 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 16:10:31,783 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 16:10:31,792 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 16:10:33,538 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:10:33,606 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 16:10:35,300 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 16:10:35,303 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:11:25 UTC)" executed successfully
+2024-12-18 16:10:35,304 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:10:45,517 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:10:55,730 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:10:59,795 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:11:00,707 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 16:11:00,707 - apscheduler.scheduler - INFO - Added job "auto_delete_message" to job store "default"
+2024-12-18 16:11:10,009 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:11:10,714 - apscheduler.scheduler - INFO - Removed job 2973b18824fd4bbc96a93281f9cfc4c2
+2024-12-18 16:11:10,714 - apscheduler.executors.default - INFO - Running job "auto_delete_message (trigger: date[2024-12-18 08:11:10 UTC], next run at: 2024-12-18 08:11:10 UTC)" (scheduled at 2024-12-18 08:11:10.707056+00:00)
+2024-12-18 16:11:11,603 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/deleteMessage "HTTP/1.1 200 OK"
+2024-12-18 16:11:11,603 - apscheduler.executors.default - INFO - Job "auto_delete_message (trigger: date[2024-12-18 08:11:10 UTC], next run at: 2024-12-18 08:11:10 UTC)" executed successfully
+2024-12-18 16:11:20,232 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:11:25,662 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:12:25 UTC)" (scheduled at 2024-12-18 08:11:25.661487+00:00)
+2024-12-18 16:11:25,663 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 16:11:25,663 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 16:11:26,146 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:11:26,146 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 90包push出claw hk 4🔪
+2024-12-18 16:11:26,147 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 90包push出claw hk 4🔪
+2024-12-18 16:11:26,147 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 出 Claw HK 4刀
+2024-12-18 16:11:26,148 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 出 Claw HK 4刀
+2024-12-18 16:11:26,148 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 16:11:26,513 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 16:11:26,514 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 16:11:27,411 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 16:11:27,412 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 16:11:27,713 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 16:11:27,713 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 16:11:28,600 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 16:11:28,602 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 16:11:29,490 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:11:29,492 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 16:11:30,371 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 16:11:30,374 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:12:25 UTC)" executed successfully
+2024-12-18 16:11:30,446 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:11:40,661 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:11:50,876 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:11:53,742 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:11:54,565 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 16:12:03,955 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:12:14,168 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:12:24,380 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:12:25,663 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:13:25 UTC)" (scheduled at 2024-12-18 08:12:25.661487+00:00)
+2024-12-18 16:12:25,664 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 16:12:25,665 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 16:12:26,137 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:12:26,138 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 90包push出claw hk 4🔪
+2024-12-18 16:12:26,138 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 90包push出claw hk 4🔪
+2024-12-18 16:12:26,139 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 出 Claw HK 4刀
+2024-12-18 16:12:26,139 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 出 Claw HK 4刀
+2024-12-18 16:12:26,140 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 16:12:26,476 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 16:12:26,477 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 16:12:27,414 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 16:12:27,415 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 16:12:27,724 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 16:12:27,725 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 16:12:28,297 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 16:12:28,298 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 16:12:29,263 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:12:29,264 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 16:12:30,533 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 16:12:30,535 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:13:25 UTC)" executed successfully
+2024-12-18 16:12:30,536 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:12:31,439 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 16:12:40,755 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:12:50,972 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:13:01,186 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:13:11,400 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:13:20,651 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:13:21,610 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 16:13:21,610 - apscheduler.scheduler - INFO - Added job "auto_delete_message" to job store "default"
+2024-12-18 16:13:25,662 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:14:25 UTC)" (scheduled at 2024-12-18 08:13:25.661487+00:00)
+2024-12-18 16:13:25,664 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 16:13:25,664 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 16:13:26,194 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:13:26,194 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 90包push出claw hk 4🔪
+2024-12-18 16:13:26,195 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 90包push出claw hk 4🔪
+2024-12-18 16:13:26,195 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 16:13:26,565 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 16:13:26,567 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 16:13:27,479 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 16:13:27,480 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 16:13:27,787 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 16:13:27,788 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 16:13:28,754 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 16:13:28,755 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 16:13:29,818 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:13:29,819 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 16:13:31,145 - frontend_handlers.rss_handlers - INFO - 成功解析到 64 条 RSS 项
+2024-12-18 16:13:31,148 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:14:25 UTC)" executed successfully
+2024-12-18 16:13:31,149 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:13:31,616 - apscheduler.scheduler - INFO - Removed job 3763b38164d44c93b7bcdf7843b0e2d8
+2024-12-18 16:13:31,616 - apscheduler.executors.default - INFO - Running job "auto_delete_message (trigger: date[2024-12-18 08:13:31 UTC], next run at: 2024-12-18 08:13:31 UTC)" (scheduled at 2024-12-18 08:13:31.610548+00:00)
+2024-12-18 16:13:32,468 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/deleteMessage "HTTP/1.1 200 OK"
+2024-12-18 16:13:32,468 - apscheduler.executors.default - INFO - Job "auto_delete_message (trigger: date[2024-12-18 08:13:31 UTC], next run at: 2024-12-18 08:13:31 UTC)" executed successfully
+2024-12-18 16:13:41,362 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:13:51,575 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:14:01,788 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:14:12,004 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:14:22,217 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:14:25,662 - apscheduler.executors.default - INFO - Running job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:15:25 UTC)" (scheduled at 2024-12-18 08:14:25.661487+00:00)
+2024-12-18 16:14:25,663 - frontend_handlers.rss_handlers - INFO - 加载关键词: {'维也纳', '圣诞', 'claw'}
+2024-12-18 16:14:25,663 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeSeek - https://rss.nodeseek.com/
+2024-12-18 16:14:26,169 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:14:26,170 - frontend_handlers.rss_handlers - INFO - 发现符合条件的条目: 90包push出claw hk 4🔪
+2024-12-18 16:14:26,170 - frontend_handlers.rss_handlers - INFO - 该条目已发送过: 90包push出claw hk 4🔪
+2024-12-18 16:14:26,171 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: v2ex - https://www.v2ex.com/index.xml
+2024-12-18 16:14:26,545 - frontend_handlers.rss_handlers - INFO - 成功解析到 50 条 RSS 项
+2024-12-18 16:14:26,546 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: hostloc - https://hostloc.com/forum.php?mod=rss
+2024-12-18 16:14:27,471 - frontend_handlers.rss_handlers - ERROR - 解析 RSS 源失败: hostloc - https://hostloc.com/forum.php?mod=rss - <unknown>:12:2: mismatched tag
+2024-12-18 16:14:27,472 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: NodeLoc - https://www.nodeloc.com/atom/discussions
+2024-12-18 16:14:27,774 - frontend_handlers.rss_handlers - INFO - 成功解析到 10 条 RSS 项
+2024-12-18 16:14:27,775 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: linux.do - https://linux.do/latest.rss
+2024-12-18 16:14:28,356 - frontend_handlers.rss_handlers - INFO - 成功解析到 30 条 RSS 项
+2024-12-18 16:14:28,358 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendbox - https://lowendbox.com/feed/
+2024-12-18 16:14:29,355 - frontend_handlers.rss_handlers - INFO - 成功解析到 20 条 RSS 项
+2024-12-18 16:14:29,356 - frontend_handlers.rss_handlers - INFO - 开始解析 RSS 源: lowendtalk - https://lowendtalk.com/discussions/feed.rss
+2024-12-18 16:14:31,288 - frontend_handlers.rss_handlers - INFO - 成功解析到 63 条 RSS 项
+2024-12-18 16:14:31,291 - apscheduler.executors.default - INFO - Job "fetch_rss_and_filter (trigger: interval[0:01:00], next run at: 2024-12-18 08:15:25 UTC)" executed successfully
+2024-12-18 16:14:32,429 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:14:42,642 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:14:52,855 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:14:54,404 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:14:55,282 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/sendMessage "HTTP/1.1 200 OK"
+2024-12-18 16:14:55,283 - apscheduler.scheduler - INFO - Added job "auto_delete_message" to job store "default"
+2024-12-18 16:15:04,618 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:15:05,294 - apscheduler.scheduler - INFO - Removed job 96098baefdd74ce097a00a5aceb389d2
+2024-12-18 16:15:05,294 - apscheduler.executors.default - INFO - Running job "auto_delete_message (trigger: date[2024-12-18 08:15:05 UTC], next run at: 2024-12-18 08:15:05 UTC)" (scheduled at 2024-12-18 08:15:05.283468+00:00)
+2024-12-18 16:15:06,113 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/deleteMessage "HTTP/1.1 200 OK"
+2024-12-18 16:15:06,114 - apscheduler.executors.default - INFO - Job "auto_delete_message (trigger: date[2024-12-18 08:15:05 UTC], next run at: 2024-12-18 08:15:05 UTC)" executed successfully
+2024-12-18 16:15:14,831 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:15:21,669 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY/getUpdates "HTTP/1.1 200 OK"
+2024-12-18 16:15:21,670 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-12-18 16:15:21,670 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-12-18 16:15:21,670 - telegram.ext.Application - INFO - Application.stop() complete

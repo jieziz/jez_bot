@@ -11,7 +11,7 @@ async def add_reply(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         config_utils.save_replies(replies)
         await update.message.reply_text(f"关键词 '{keyword}' 的回复已设置为 '{reply}'。")
     else:
-        await update.message.reply_text("请提供关键词和回复。例如: /add_reply 退款 会退款的请耐心等待")
+        await update.message.reply_text("请提供关键词和回复。例如: /add_reply 退款:会退款的请耐心等待")
 
 async def remove_reply(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     if context.args:

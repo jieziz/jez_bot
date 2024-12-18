@@ -18,7 +18,7 @@ def main() -> None:
     application.add_handler(reply_handlers.list_replies_handler)
 
     # 添加监听群组消息的处理器
-    # application.add_handler(auto_reply_handlers.monitor_group_messages_handler)
+    application.add_handler(auto_reply_handlers.monitor_group_messages_handler)
 
     # 添加监听新人入群的处理器
     # application.add_handler(chat_member_handlers.handle_new_member_handler)

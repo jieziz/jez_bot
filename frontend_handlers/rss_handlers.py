@@ -4,7 +4,7 @@ import os
 from datetime import datetime, timedelta
 import feedparser
 from telegram import Bot
-from config import TELEGRAM_BOT_TOKEN, CHAT_ID, RSS_SOURCES, SENT_LINKS_FILE, KEYWORDS_FILE
+from config import TELEGRAM_BOT_TOKEN, CHAT_ID, RSS_SOURCES
 from utils import config_utils
 import re
 
