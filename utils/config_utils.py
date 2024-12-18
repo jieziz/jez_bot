@@ -13,16 +13,6 @@ def save_keywords(keywords: set) -> None:
     with open(KEYWORDS_FILE, "w", encoding="utf-8") as file:
         json.dump(list(keywords), file, ensure_ascii=False, indent=4)
 
-def load_replies() -> dict:
-    if os.path.exists(REPLIES_FILE):
-        with open(REPLIES_FILE, "r", encoding="utf-8") as file:
-            return json.load(file)
-    return {}
-
-def save_replies(replies: dict) -> None:
-    with open(REPLIES_FILE, "w", encoding="utf-8") as file:
-        json.dump(replies, file, ensure_ascii=False, indent=4)
-
 def load_sent_links() -> set:
     if os.path.exists(SENT_LINKS_FILE):
         try:
@@ -50,3 +40,14 @@ def load_replies() -> dict:
             print(f"Error decoding JSON from {REPLIES_FILE}: {e}")
             return {}
     return {}
+
+
+def load_replies() -> dict:
+    if os.path.exists(REPLIES_FILE):
+        with open(REPLIES_FILE, "r", encoding="utf-8") as file:
+            return json.load(file)
+    return {}
+
+def save_replies(replies: dict) -> None:
+    with open(REPLIES_FILE, "w", encoding="utf-8") as file:
+        json.dump(replies, file, ensure_ascii=False, indent=4)
