@@ -15,10 +15,10 @@ bot = Bot(token=TELEGRAM_BOT_TOKEN)
 # 设置日志配置
 logger = logging.getLogger(__name__)
 
-def escape_markdown(text):
-    # 转义 Markdown 特殊字符
-    escape_chars = r'_*[]()~`>#+-=|{}.!'
-    return re.sub(f'([{re.escape(escape_chars)}])', r'\\\1', text)
+def escape_markdown(title):
+    # 将 title 中的 [ 和 ] 替换为相应的 HTML 实体
+    escaped_title = title.replace('[', '&#91;').replace(']', '&#93;')
+    return escaped_title
 
 # 提取所需字段的内容
 def extract_fields(entry, fields, date_format):
