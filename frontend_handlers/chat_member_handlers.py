@@ -1,16 +1,17 @@
 from telegram import Update
 from telegram.ext import ContextTypes, ChatMemberHandler
-from config import CHANNEL_ID
+from config import CHANNEL_ID, CHANNEL_LINK  # 确保 CHANNEL_LINK 是频道的链接
 
 async def handle_new_member(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     if update.chat_member.new_chat_member.status == 'member':
         user_id = update.chat_member.new_chat_member.user.id
         chat_id = update.chat_member.chat.id
 
-        # 发送欢迎消息
+        # 发送欢迎消息，包含频道的链接
         message = await context.bot.send_message(
             chat_id=chat_id,
-            text=f"欢迎新成员！请在60秒内关注频道 {CHANNEL_ID}，否则将被移出群组。"
+            text=f"欢迎新成员！请在60秒内关注频道 [ClawCloud]({CHANNEL_LINK})，否则将被移出群组。",
+            parse_mode='Markdown'  # 使用 Markdown 解析模式
         )
 
         # 设置定时器检查是否关注频道

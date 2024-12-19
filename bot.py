@@ -1,7 +1,7 @@
 from telegram.ext import Application
-from frontend_handlers import auto_reply_handlers, rss_handlers,chat_member_handlers
+from frontend_handlers import auto_reply_handlers, rss_handlers, chat_member_handlers
 from management_handlers import reply_handlers, rss_keyword_handlers
-from config import TELEGRAM_BOT_TOKEN
+from config import TELEGRAM_BOT_TOKEN, RSS_FETCH_INTERVAL
 from utils import logging_utils
 
 def main() -> None:
@@ -23,8 +23,8 @@ def main() -> None:
     # 添加监听新人入群的处理器
     # application.add_handler(chat_member_handlers.handle_new_member_handler)
 
-    # 启动 RSS 抓取任务
-    application.job_queue.run_repeating(rss_handlers.fetch_rss_and_filter, interval=60, first=0)
+    # 启动 RSS 抓取任务，使用配置文件中的间隔时间
+    application.job_queue.run_repeating(rss_handlers.fetch_rss_and_filter, interval=RSS_FETCH_INTERVAL, first=0)
 
     # 启动轮询
     application.run_polling()

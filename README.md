@@ -17,12 +17,12 @@ This is a Telegram bot project that listens to group messages and performs actio
 4. Run the bot: `python bot.py`.
 
 ## Usage
-- `/add_keyword <keyword>`: Add a keyword.
-- `/remove_keyword <keyword>`: Remove a keyword.
-- `/list_keywords`: List all keywords.
-- `/add_reply <keyword> <reply>`: Add a reply for a keyword.
-- `/remove_reply <keyword>`: Remove a reply for a keyword.
-- `/list_replies`: List all keyword-based replies.
+- `/add_kw <keyword>`: Add a keyword.
+- `/del_kw <keyword>`: Remove a keyword.
+- `/list_kw`: List all keywords.
+- `/add_re <keyword> <reply>`: Add a reply for a keyword.
+- `/del_re <keyword>`: Remove a reply for a keyword.
+- `/list_re`: List all keyword-based replies.
 
 ## Configuration
 - `keywords.json`: Stores the list of keywords.
@@ -47,12 +47,12 @@ This is a Telegram bot project that listens to group messages and performs actio
 4. 运行机器人：`python bot.py`。
 
 ## 使用方法
-- `/add_keyword <keyword>`：添加一个关键词。
-- `/remove_keyword <keyword>`：删除一个关键词。
-- `/list_keywords`：列出所有关键词。
-- `/add_reply <keyword> <reply>`：为某个关键词添加回复。
-- `/remove_reply <keyword>`：删除某个关键词的回复。
-- `/list_replies`：列出所有关键词对应的回复。
+- `/add_kw <keyword>`：添加一个关键词。
+- `/del_kw <keyword>`：删除一个关键词。
+- `/list_kw`：列出所有关键词。
+- `/add_re <keyword> <reply>`：为某个关键词添加回复。
+- `/del_re <keyword>`：删除某个关键词的回复。
+- `/list_re`：列出所有关键词对应的回复。
 
 ## 配置文件
 - `keywords.json`：存储关键词列表。

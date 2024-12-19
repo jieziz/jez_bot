@@ -13,7 +13,7 @@ async def add_keyword(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
         config_utils.save_keywords(keywords)
         await update.message.reply_text(f"关键词 '{keyword}' 已添加。")
     else:
-        await update.message.reply_text("请提供要添加的关键词。例如: /add_keyword 你的关键词")
+        await update.message.reply_text("请提供要添加的关键词。例如: /add_kw 你的关键词")
 
 async def remove_keyword(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     if context.args:
@@ -26,7 +26,7 @@ async def remove_keyword(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
         else:
             await update.message.reply_text(f"关键词 '{keyword}' 不存在。")
     else:
-        await update.message.reply_text("请提供要删除的关键词。例如: /remove_keyword 你的关键词")
+        await update.message.reply_text("请提供要删除的关键词。例如: /del_kw 你的关键词")
 
 async def list_keywords(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     keywords = config_utils.load_keywords()

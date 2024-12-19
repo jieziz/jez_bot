@@ -4,7 +4,10 @@ KEYWORDS_FILE = "data/keywords.json"
 REPLIES_FILE = "data/replies.json"
 SENT_LINKS_FILE = "data/sent_links.json"
 CHANNEL_ID = "-1002324829620"  # 替换为实际的频道ID
+CHANNEL_LINK = ""
 AUTO_DELETE_TIME = 30  # 自动删除消息的时间（秒）
+# RSS 抓取任务的间隔时间（单位：秒）
+RSS_FETCH_INTERVAL = 30
 
 RSS_SOURCES = [                         
     {
