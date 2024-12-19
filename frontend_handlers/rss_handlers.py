@@ -70,7 +70,7 @@ async def send_message_and_save(bot, chat_id, link, unique_key, title, formatted
         f"{notification_emoji} *{notification_title}* {notification_emoji}\n"
         f"━━━━━━━━━━━\n"
         f"\U0001F4E2  [{title}]({link})\n"
-        f"\U0001F3F7  {source_name}  `{formatted_date}`"
+        f"\U0001F3F7  {source_name}   `{formatted_date}`"
     )
 
     try:
