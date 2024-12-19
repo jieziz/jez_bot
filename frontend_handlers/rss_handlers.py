@@ -17,8 +17,9 @@ logger = logging.getLogger(__name__)
 
 def escape_markdown(title):
     # 将 title 中的 [ 和 ] 替换
-    escaped_title = title.replace('[', '\\[').replace(']', '\\]')
+    escaped_title = title.replace('[', '【').replace(']', '】')
     return escaped_title
+
 
 # 提取所需字段的内容
 def extract_fields(entry, fields, date_format):
