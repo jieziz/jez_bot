@@ -16,8 +16,8 @@ bot = Bot(token=TELEGRAM_BOT_TOKEN)
 logger = logging.getLogger(__name__)
 
 def escape_markdown(title):
-    # 将 title 中的 [ 和 ] 替换为相应的 HTML 实体
-    escaped_title = title.replace('[', '&#91;').replace(']', '&#93;')
+    # 将 title 中的 [ 和 ] 替换
+    escaped_title = title.replace('[', '\\[').replace(']', '\\]')
     return escaped_title
 
 # 提取所需字段的内容
@@ -63,7 +63,7 @@ async def send_message_and_save(bot, chat_id, link, unique_key, title, formatted
         notification_title = "交易来啦"
         notification_emoji = "\U0001F4B0"  # 金钱图标 💰
     else:
-        notification_title = "新帖子来啦"
+        notification_title = "新帖来啦"
         notification_emoji = "\U0001F514"  # 铃铛图标 🔔
 
     message = (
