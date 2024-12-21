@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 *.pyo
 rss_bot.log
+sent_links.json
+keywords.json
+replies.json
