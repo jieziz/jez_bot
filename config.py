@@ -1,5 +1,5 @@
 TELEGRAM_BOT_TOKEN = "7579255040:AAFYREPl_G0tAoFT3Jeq5ARbymBkxADGVxY"
-CHAT_ID = "907118371"
+CHAT_ID = "-1002258574622"
 KEYWORDS_FILE = "data/keywords.json"
 REPLIES_FILE = "data/replies.json"
 SENT_LINKS_FILE = "data/sent_links.json"
