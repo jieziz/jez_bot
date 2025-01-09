@@ -5,11 +5,12 @@ from config import CHANNEL_ID, CHANNEL_LINK
 
 
 async def handle_new_member(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    logging.info(f"处理新成员监听器生效")
     if update.chat_member.new_chat_member.status == 'member':
         user = update.chat_member.new_chat_member.user
         username = f"@{user.username}" if user.username else user.first_name
         chat_id = update.chat_member.chat.id
-        
+
         logging.info(f"处理新成员：{username}，用户ID：{user.id}，群组ID：{chat_id}")
         # 发送欢迎消息
         try:
