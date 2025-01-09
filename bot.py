@@ -21,7 +21,7 @@ def main() -> None:
     application.add_handler(auto_reply_handlers.monitor_group_messages_handler)
 
     # 添加监听新人入群的处理器
-    # application.add_handler(chat_member_handlers.handle_new_member_handler)
+    application.add_handler(chat_member_handlers.handle_new_member_handler)
 
     # 启动 RSS 抓取任务，使用配置文件中的间隔时间
     application.job_queue.run_repeating(rss_handlers.fetch_rss_and_filter, interval=RSS_FETCH_INTERVAL, first=0)
