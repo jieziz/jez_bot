@@ -59,7 +59,7 @@ RSS_SOURCES = [
         "date_format": "%a, %d %b %Y %H:%M:%S %z",
         "unique_key": "link"  
     }，
-        {
+    {
         "url": "https://lowendspirit.com/discussions/feed.rss",
         "name": "lowendspirit",
         "fields": ["title", "link", "published"], 
