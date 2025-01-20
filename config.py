@@ -32,7 +32,7 @@ RSS_SOURCES = [
         "unique_key": "link"  
     },
     {
-        "url": "https://www.nodeloc.com/atom/discussions",
+        "url": "https://rsshub.app/telegram/channel/nodeloc_rss",
         "name": "NodeLoc",
         "fields": ["title", "link", "updated"], 
         "date_format": "%Y-%m-%dT%H:%M:%S%z",
